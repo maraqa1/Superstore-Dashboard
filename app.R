@@ -120,14 +120,14 @@ server <- function(input, output,session) {
   
   output$table1<-DT::renderDT({
   
-    DT::datatable( top_n_var(dplyr::quo(`Customer Name`),df.filter()) ) %>% 
+    DT::datatable( top_n_var(grp.var=dplyr::quo(`Customer Name`),var.total=dplyr::quo(`Sales`),df.filter()) ) %>% 
       
       DT::formatStyle('Customer Name',backgroundColor = DT::styleInterval(3.4, c('gray', 'yellow')))
   })
   
   output$table2<-DT::renderDT({
     
-    top_n_var(dplyr::quo(`Quantity`),df.filter()) #%>% 
+    top_n_var(grp.var=dplyr::quo(`Customer Name`),var.total=dplyr::quo(`Quantity`),df.filter()) #%>% 
     
     #DT::formatStyle('Customer Name',
     #backgroundColor = DT::styleInterval(3.4, c('gray', 'yellow'))

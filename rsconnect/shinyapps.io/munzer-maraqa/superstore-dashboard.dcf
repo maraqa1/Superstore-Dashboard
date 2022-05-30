@@ -1,0 +1,11 @@
+name: superstore-dashboard
+title:
+username:
+account: munzer-maraqa
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 6385701
+bundleId: 5954413
+url: https://munzer-maraqa.shinyapps.io/superstore-dashboard/
+when: 1653728084.2478
+lastSyncTime: 1653728084.2478
